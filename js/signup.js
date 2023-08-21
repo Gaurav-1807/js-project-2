@@ -26,6 +26,8 @@ const sign = (e) => {
           headers: {'content-type': 'application/json'},
           body: JSON.stringify(user)
         })
+        alert("sign up successfully")
+       window.location.href="./login.html"
       }
     })
     
