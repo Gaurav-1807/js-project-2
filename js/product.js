@@ -26,7 +26,7 @@ const display = (data) => {
         distri.innerHTML = ele.distri;
         let price = document.createElement("h5");
         price.innerHTML = ele.price;
-        let cart = document.createElement("a");
+        let cart = document.createElement("button");
         cart.innerHTML = ele.cart;
         imagebox.append(image);
         flexbox2.append(price, cart);
@@ -35,6 +35,19 @@ const display = (data) => {
         div2.append(flexmain)
         div1.append(imagebox, div2);
         document.getElementById("product").append(div1);
+        cart.addEventListener("click", ()=>{
+            let loggedIn= localStorage.getItem("loggedIn");
+           if(loggedIn){
+            fetch(" http://localhost:3000/cart",{
+                method: "POST",
+                headers: {'content-type': 'application/json'},
+                body: JSON.stringify(products.id)
+              })
+           }
+           else{
+            alert("Error");
+           }
+        })
     });
 }
 

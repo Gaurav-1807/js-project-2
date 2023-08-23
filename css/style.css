@@ -9,7 +9,7 @@ body{
     /* width: 350px; */
     height: auto;
 }
-.flexbox2 a{
+.flexbox2 button{
     padding: 10px 20px;
     background-color: #9db97b;
     font-size: 10px;
@@ -18,7 +18,7 @@ body{
     cursor: pointer;
     transition: all 0.5s;
 }
-.flexbox2 a:hover{
+.flexbox2 button:hover{
     background-color: transparent;
     color: #9db97b !important;
     border-color: #9db97b !important;

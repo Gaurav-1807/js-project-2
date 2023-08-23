@@ -16,6 +16,7 @@ const login = (e) => {
         if(data[0].password===user.password){
             alert("login succes full")
             window.location="./index.html"
+            localStorage.setItem("loggedIn",true)
         }
         else{
             alert("enter the correct password")

@@ -17,7 +17,22 @@
       "email": "gaurav22@gmail.com",
       "password": "Gaurav@1807",
       "id": 3
+    },
+    {
+      "name": "Gaurav Ambaliya ",
+      "email": "gaurav11@gmail.com",
+      "password": "Gaurav@1807",
+      "id": 4
+    },
+    {
+      "name": "Gaurav Ambaliya ",
+      "email": "gaurav21@gmail.com",
+      "password": "Gaurav@1807",
+      "id": 5
     }
+  ],
+  "cart": [
+  
   ],
   "product": [
     {
@@ -25,56 +40,64 @@
       "name": "CHAIR",
       "distri": "wooden chair",
       "price": "$30.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 1
     },
     {
       "image": "img/2.jpg",
       "name": "TEA KETTLE",
       "distri": " Home",
       "price": "$26.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 2
     },
     {
       "image": "img/3.jpg",
       "name": "ARMCHAIR",
       "distri": "Homemade",
       "price": "$56.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 3
     },
     {
       "image": "img/4.jpg",
       "name": "BED TABLE",
       "distri": "Style",
       "price": "$36.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 4
     },
     {
       "image": "img/5.jpg",
       "name": "VASE",
       "distri": "Inside - Style",
       "price": "$19.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 5
     },
     {
       "image": "img/6.jpg",
       "name": "CHAIR",
       "distri": "wooden chair",
       "price": "$18.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 6
     },
     {
       "image": "img/7.jpg",
       "name": "FICUS",
       "distri": "Seed Plant",
       "price": "$22.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 7
     },
     {
       "image": "img/8.jpg",
       "name": "CHAIR",
       "distri": "wooden chair",
       "price": "$28.00",
-      "cart": "ADD TO CART"
+      "cart": "ADD TO CART",
+      "id": 8
     }
   ]
 }

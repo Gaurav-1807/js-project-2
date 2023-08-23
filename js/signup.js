@@ -21,13 +21,15 @@ const sign = (e) => {
         ,2000);
       }
       else{
+        alert("sign up successfully")
+       window.location.href="./login.html"
+       localStorage.setItem("loggedIn",true)
         fetch(" http://localhost:3000/user",{
           method: "POST",
           headers: {'content-type': 'application/json'},
           body: JSON.stringify(user)
         })
-        alert("sign up successfully")
-       window.location.href="./login.html"
+        
       }
     })
     
