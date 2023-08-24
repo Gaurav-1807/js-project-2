@@ -32,7 +32,15 @@
     }
   ],
   "cart": [
-  
+    {
+      "image": "img/2.jpg",
+      "name": "TEA KETTLE",
+      "distri": " Home",
+      "price": "$26.00",
+      "qty": 1,
+      "cart": "ADD TO CART",
+      "id": 2
+    }
   ],
   "product": [
     {
@@ -40,6 +48,7 @@
       "name": "CHAIR",
       "distri": "wooden chair",
       "price": "$30.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 1
     },
@@ -48,6 +57,7 @@
       "name": "TEA KETTLE",
       "distri": " Home",
       "price": "$26.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 2
     },
@@ -56,6 +66,7 @@
       "name": "ARMCHAIR",
       "distri": "Homemade",
       "price": "$56.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 3
     },
@@ -64,6 +75,7 @@
       "name": "BED TABLE",
       "distri": "Style",
       "price": "$36.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 4
     },
@@ -72,6 +84,7 @@
       "name": "VASE",
       "distri": "Inside - Style",
       "price": "$19.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 5
     },
@@ -80,6 +93,7 @@
       "name": "CHAIR",
       "distri": "wooden chair",
       "price": "$18.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 6
     },
@@ -88,6 +102,7 @@
       "name": "FICUS",
       "distri": "Seed Plant",
       "price": "$22.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 7
     },
@@ -96,6 +111,7 @@
       "name": "CHAIR",
       "distri": "wooden chair",
       "price": "$28.00",
+      "qty": 1,
       "cart": "ADD TO CART",
       "id": 8
     }

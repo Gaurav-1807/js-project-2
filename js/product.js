@@ -35,18 +35,22 @@ const display = (data) => {
         div2.append(flexmain)
         div1.append(imagebox, div2);
         document.getElementById("product").append(div1);
-        cart.addEventListener("click", ()=>{
-            let loggedIn= localStorage.getItem("loggedIn");
-           if(loggedIn){
-            fetch(" http://localhost:3000/cart",{
-                method: "POST",
-                headers: {'content-type': 'application/json'},
-                body: JSON.stringify(products.id)
-              })
-           }
-           else{
-            alert("Error");
-           }
+        cart.addEventListener("click", () => {
+            let loggedIn = localStorage.getItem("loggedIn");
+           
+            if (loggedIn) {
+                fetch(" http://localhost:3000/cart", {
+                    method: "POST",
+                    headers: { 'content-type': 'application/json' },
+                    body: JSON.stringify(ele)
+                })
+            }
+            else {
+                alert("please first login then you can add to cart")
+                setTimeout(
+                    window.location.href = "/login.html"
+                    , 1000)
+            }
         })
     });
 }
@@ -58,4 +62,4 @@ fetch(" http://localhost:3000/product")
     .then((response) => {
         products = response;
         display(products);
- });
+    });

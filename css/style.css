@@ -9,7 +9,7 @@ body{
     /* width: 350px; */
     height: auto;
 }
-.flexbox2 button{
+.productmainbox .flexbox2 button{
     padding: 10px 20px;
     background-color: #9db97b;
     font-size: 10px;
@@ -18,25 +18,25 @@ body{
     cursor: pointer;
     transition: all 0.5s;
 }
-.flexbox2 button:hover{
+.productmainbox .flexbox2 button:hover{
     background-color: transparent;
     color: #9db97b !important;
     border-color: #9db97b !important;
 }
-.flexbox1 h4{
+.productmainbox .flexbox1 h4{
     font-size: 18px;
     text-transform: uppercase;
 }
-.flexbox1 h5{
+.productmainbox .flexbox1 h5{
     font-size: 16px;
 }
-.flexbox2{
+.productmainbox .flexbox2{
     text-align: right;
 }
-.flexbox2 h5{
+.productmainbox .flexbox2 h5{
     font-size: 14px;
 }
-.flexbox1{
+.productmainbox .flexbox1{
     text-align: left;
 }
 .productmainbox img{
@@ -44,18 +44,90 @@ body{
    
     
 }
-.productimagebox{
+.productmainbox {
     text-align: center;
 }
-.flexmain{
+.productmainbox .flexmain{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
     
 }
-#product{
+#product {
    display: flex;
    flex-wrap: wrap;
   
+}
+
+/* cart  */
+
+.cartmainbox{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    /* width: 350px; */
+    height: auto;
+}
+.cartmainbox .detail2 button{
+    padding: 10px 20px;
+    background-color: #9db97b;
+    font-size: 10px;
+    color: white !important;
+    border: 1px solid #9db97b;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.5s;
+}
+.cartmainbox .detail2 button:hover{
+    background-color: transparent;
+    color: #9db97b !important;
+    border-color: #9db97b !important;
+}
+.cartmainbox .productdetails{
+    margin-left: 25px;
+}
+.cartmainbox .detail1 h4{
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.cartmainbox .detail1 h5{
+    font-size: 16px;
+   
+}
+.cartmainbox .flexbox2{
+    /* text-align: right; */
+}
+.cartmainbox .detail2 h5{
+    font-size: 14px;
+    color: red;
+    font-weight: 800;
+}
+.cartmainbox .flexbox1{
+    /* text-align: left; */
+}
+.cartmainbox  img{
+    width: 150px;
+   
+    
+}
+
+.cartmainbox p{
+    font-size: 14px;
+}
+/* .cartmainbox{
+    text-align: center;
+} */
+.cartmainbox .flexmain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+#cart {
+   display: flex;
+   flex-wrap: wrap;
+  margin: 0 auto;
 }

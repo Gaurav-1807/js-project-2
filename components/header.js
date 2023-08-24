@@ -13,14 +13,12 @@ const Navbar = ()=>{
               <a class="nav-link active mx-4" aria-current="page" href="index.html">HOME</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link mx-4" href="about.html">ABOUT US</a>
-            </li>
+           
             <li class="nav-item">
               <a class="nav-link mx-4" href="product.html">PRODUCT</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link mx-4 " href="shop.html">SHOP</a>
+              <a class="nav-link mx-4 " href="cart.html">CART</a>
 
             </li>
             <li class="nav-item">
