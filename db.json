@@ -40,6 +40,15 @@
       "qty": 1,
       "cart": "ADD TO CART",
       "id": 2
+    },
+    {
+      "image": "img/3.jpg",
+      "name": "ARMCHAIR",
+      "distri": "Homemade",
+      "price": "$56.00",
+      "qty": 1,
+      "cart": "ADD TO CART",
+      "id": 3
     }
   ],
   "product": [
