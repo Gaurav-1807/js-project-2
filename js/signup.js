@@ -23,7 +23,7 @@ const sign = (e) => {
       else{
         alert("sign up successfully")
        window.location.href="./login.html"
-       localStorage.setItem("loggedIn",true)
+       localStorage.setItem("login",true)
         fetch(" http://localhost:3000/user",{
           method: "POST",
           headers: {'content-type': 'application/json'},
@@ -35,6 +35,8 @@ const sign = (e) => {
     
   }
   document.getElementById("sign-page").addEventListener("submit", sign)
+
+  
   document.getElementById("email").addEventListener("keypress",()=>{
     let email=document.getElementById("email").value
     let e_pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;

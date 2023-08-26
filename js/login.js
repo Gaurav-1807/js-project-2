@@ -4,31 +4,33 @@ document.getElementById("navbar").innerHTML=Navbar()
 
 // sign
 const login = (e) => {
-    e.preventDefault();
-    let user = {
-      email: document.getElementById("email").value,
-      password: document.getElementById("password").value
-    };
-    fetch(` http://localhost:3000/user?email=${user.email}`)
-    .then((res) => res.json())
-    .then((data)=> {
-      if(data.length > 0){
-        if(data[0].password===user.password){
-            alert("login succes full")
-            window.location="./index.html"
-            localStorage.setItem("loggedIn",true)
-        }
-        else{
-            alert("enter the correct password")
-        }
+  e.preventDefault();
+  let user = {
+    email: document.getElementById("email").value,
+    password: document.getElementById("password").value
+  };
+  fetch(`http://localhost:3000/user?email=${user.email}`)
+  .then((res) => res.json())
+  .then((data)=> {
+    if(data.length > 0){
+      if(data[0].password===user.password){
+        localStorage.setItem("login",true)
+          alert("login succes full")
+          setTimeout(
+            window.location.href="/index.html"  
+            ,1000)
       }
       else{
-        alert("user can not acces")
+          alert("enter the correct password")
       }
-    })
-    
-  }
-  document.getElementById("sign-page").addEventListener("submit", login)
+    }
+    else{
+      alert("user can not found")
+    }
+  })
+  
+}
+document.getElementById("sign-page").addEventListener("submit", login)
   document.getElementById("email").addEventListener("keypress",()=>{
     let email=document.getElementById("email").value
     let e_pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;

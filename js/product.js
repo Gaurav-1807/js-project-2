@@ -36,7 +36,7 @@ const display = (data) => {
         div1.append(imagebox, div2);
         document.getElementById("product").append(div1);
         cart.addEventListener("click", () => {
-            let loggedIn = localStorage.getItem("loggedIn");
+            let loggedIn = localStorage.getItem("login");
            
             if (loggedIn) {
                 fetch(" http://localhost:3000/cart", {
